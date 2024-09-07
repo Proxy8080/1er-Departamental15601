@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Practica HTMl</title>
+</head>
+<body>
+    <h1>Este es un encabezado grandote</h1>
+    <nav>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </nav>
+    <header>La cabezera de nuestra pagina</header> 
+    <br>
+    <section>
+        <article>
+            Esto es un parrafo normal
+            <br>
+            <a href="https://www.jornada.com.mx/">Periodico la jornada</a>
+
+        </article>
+        <article>
+            imagen 1 <br>
+            <img src="https://www.publimetro.com.mx/resizer/v2/6VRJC6BC4FDB5B5KPQLWCOHTN4.jpeg?auth=6ad40c60b71394f604d238995006d3f69ce5eca84982da3b94c47d91c9ac5efa&width=800&height=503"
+                alt="Gomita maui"><br>
+            imagen 2 <br>
+            <img src="./imagenes/zavon.jpeg" alt="Gomita Dragon ball">
+        </article>
+        <article>
+            <br>
+            Audio
+            <br>
+            <audio src="./audio/Lateralus.mp3" controls autoplay loop></audio>
+            <br>
+            Video1
+            <br>
+            <video width="640" height="360" controls>
+                <source src="./video/TOOL - Ænema (Official Video).mp4" type="video/mp4">
+                <!-- Texto alternativo -->
+            </video>
+            <br>
+            Video2
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FKROYzWRiQ0?si=l9O21yIyp3HGBHGN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </article>
+    </section>
+
+    <section>
+        <h3>Tipos de elementos en un formulario</h3>
+        <form action="" oninput=""  method="get">
+            <p>
+                Nombre: <input type="text" name="name_control" autofocus required />
+                <br />
+                Correo Electrónico: <input type="email" name="email_control" required />
+                <br />
+                URL:
+                <input type="url" name="url_control" placeholder="Escribe la URL de tu página web personal" />
+                <br />
+                Fecha: <input type="date" name="date_control" />
+                <br />
+                Tiempo: <input type="time" name="time_control" />
+                <br />
+                Fecha y hora de nacimiento:
+                <input type="datetime" name="datetime_control" />
+                <br />
+                Mes: <input type="month" name="month_control" />
+                <br />
+                Semana: <input type="week" name="week_control" />
+                <br />
+                Número (min -10, max 10):
+                <input type="number" name="number_control" min="-10" max="10" value="0" />
+                <br />
+                Intervalo (min 0, max 10):
+                <input type="range" name="range_control" min="0" max="10" value="0" />
+                <output for="range_control" name="range_control_value">0</output>
+                <br />
+                Teléfono: <input type="tel" name="tel_control" />
+                <br />
+                Término de búsqueda: <input type="search" name="search_control" />
+                <br />
+                Color Favorito: <input type="color" name="color_control" />
+              </p>
+            
+            <p><input type="submit" value="Enviar" /></p>
+        </form>
+    </section>
+    <footer>Este es el pie de mi pagina web</footer>
+</body>
+</html>
